@@ -1,0 +1,216 @@
+.parent {
+    height: 500px;
+    width: 500px;
+    background: red;
+    border: 3px solid black;
+    margin:250px auto;
+    position: relative;
+    
+}
+/* Decendant Selector
+
+    parent child{
+        property : value ;
+    }
+*/
+.parent .child{
+    height: 250px;
+    width: 250px;
+    transition: transform;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transform: rotate(0deg);
+}
+
+
+.parent .child1{
+    /* State 1.*/
+    background: aqua;
+    transform-origin: left top;
+}
+    /* State 2.*/
+.parent:hover .child1 , .parent:hover .child2,.parent:hover .child3, .parent:hover .child4,
+.parent:hover .child1 .grand_child1, .parent:hover .child1 .grand_child2,.parent:hover .child1 .grand_child3,.parent:hover .child1 .grand_child4 ,
+.parent:hover .child2 .g_child1,.parent:hover .child2 .g_child2,.parent:hover .child2 .g_child3,.parent:hover .child2 .g_child4,
+.parent:hover .child3 .g_c1, .parent:hover .child3 .g_c2, .parent:hover .child3 .g_c3, .parent:hover .child3 .g_c4,
+.parent:hover .child4 .g_cl1, .parent:hover .child4 .g_cl2, .parent:hover .child4 .g_cl3, .parent:hover .child4 .g_cl4
+
+{
+   
+    transform: rotate(360deg);     
+}
+
+.parent .child2{
+    background: green;
+    transform-origin: left bottom;
+    
+}
+.parent .child3{
+    background: purple;
+    transform-origin: right top; 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.parent .child4{
+    background: yellow;
+    transform-origin: right bottom; 
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+ 
+.grand_child{
+    height: 125px;
+    width: 125px;
+    transition: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+    
+}
+.child1 .grand_child1{ 
+    background: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform-origin: left top;
+    
+}
+
+.child1 .grand_child2{
+    background: blue;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform-origin: left bottom;
+    
+}
+.child1 .grand_child3{
+    background: green;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform-origin: right top;
+    
+    
+}
+.child1 .grand_child4{
+    background: deeppink;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform-origin: right bottom;
+    
+    
+}
+
+
+.child2 .g_child1{ 
+    background: yellow;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform-origin: left top;
+    transform: rotate(0deg);
+}
+
+.child2 .g_child2{
+    background: aqua;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+}
+.child2 .g_child3{
+    background: #4d1d58;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform-origin: right top;
+    transform: rotate(0deg);
+    
+}
+.child2 .g_child4{
+    background: #59fd07;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+    
+}
+
+
+.child3 .g_c1{ 
+    background: yellow;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform-origin: left top;
+    transform: rotate(0deg);
+}
+
+.child3 .g_c2{
+    background: aqua;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+}
+.child3 .g_c3{
+    background: #4d1d58;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform-origin: right top;
+    transform: rotate(0deg);
+    
+}
+.child3 .g_c4{
+    background: #59fd07;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+    
+}
+.child4 .g_cl1{ 
+    background: #8c16da;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform-origin: left top;
+    transform: rotate(0deg);
+}
+
+.child4 .g_cl2{
+    background: #89c801;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+}
+.child4 .g_cl3{
+    background: #13e29d;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform-origin: right top;
+    transform: rotate(0deg);
+    
+}
+.child4 .g_cl4{
+    background: #fd6e07;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+    
+}
+
